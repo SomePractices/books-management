@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>搜索</title>
+    <meta charset="utf-8">
+    <link href="/css/vender/normalize.css" rel="stylesheet" type="text/css">
+    <link href="/css/book-search.css" rel="stylesheet" type="text/css">
+</head>
+<table class="search-table">
+    <tr>
+        <th>书号</th>
+        <th>书名</th>
+        <th>作者</th>
+        <th>出版社</th>
+        <th>入库时间</th>
+        <th>最新更新时间</th>
+    </tr>
+    <% for(var i = 0;i < books.length;i++){ %>
+        <tr class="search-result">
+            <td><%= books[i].id %></td>
+            <td><%= books[i].bookName %></td>
+            <td><%= books[i].bookAuthor %></td>
+            <td><%= books[i].bookPress %></td>
+            <td><%= books[i].startTime %></td>
+            <td><%= books[i].updateTime %></td>
+        </tr>
+
+    <% } %>
+</table>
+</html>

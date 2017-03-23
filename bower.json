@@ -1,0 +1,20 @@
+{
+  "name": "books-management",
+  "description": "Books Management(图书管理)",
+  "main": "index.js",
+  "authors": [
+    "FishNon <757505375@qq.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/TwoGods/books-management",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fs": "^1.0.1"
+  }
+}

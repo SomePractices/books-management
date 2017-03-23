@@ -7,8 +7,15 @@ var bodyParser = require('body-parser');
 var port = 3000;
 // var index = require('./routes/index');
 // var users = require('./routes/users');
+var book = require('./routes/book');
+
 
 var app = express();
+
+// express托管静态文件
+app.use(express.static('public'));
+
+
 
 // view engine setup
 app.set('views', path.join(__dirname, './views'));
@@ -21,6 +28,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, './public')));
+
+app.get('/book', book);
 
 // app.use('/', index);
 // app.use('/users', users);
@@ -59,3 +68,5 @@ app.listen(port);
 console.log('Listening on 3000');
 
 module.exports = app;
+
+
