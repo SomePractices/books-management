@@ -1,0 +1,38 @@
+html, body {
+    width: 100%;
+}
+
+.search-table {
+    position: relative;
+    width: 90%;
+    min-width: 550px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    background: #eee;
+}
+
+.search-table th {
+    position: relative;
+    background: #545454;
+    color: #fff;
+    height: 40px;
+    width: 16%;
+    font-size: 1.1em;
+}
+
+.search-table td {
+    background: #fff;
+    width: 16%;
+    height: 40px;
+    line-height: 40px;
+    color: #474747;
+}
+
+.search-table tr:nth-child(even) td {
+    background: #fff;
+}
+
+.search-table tr:nth-child(odd) td {
+    background: #f5f5f5;
+}
