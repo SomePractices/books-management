@@ -27,7 +27,7 @@ function search(sql, condition, req, res) {
             console.log('No Found');
             return;
         }
-        res.render('index', {books: rows});
+        res.render('index-search', {books: rows});
     });
 }
 
