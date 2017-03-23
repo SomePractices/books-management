@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: #f5f5f5;
+}
+
+nav h1 {
+    display: inline-block;
+    color: #888;
+    font-size: 27px;
+    position: absolute;
+    top: 13px;
+    left: 20px;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+}
+
+.component {
+    position: relative;
+    width: 28%;
+    height: 300px;
+    left: 60%;
+    margin-top: 100px;
+    /*border: 1px solid #c0c0c0;*/
+    padding: 20px;
+}
+
+.component p {
+    height: 35px;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 2px;
+    color: #555;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 15px;
+    border-left: 4px solid #00c9d3;
+}
+
+.component form { /*表单*/
+    width: 80%;
+    /*height: 200px;*/
+    /*margin-left:30px;*/
+
+    /*margin-top:30px;*/
+    padding-left: 30px;
+    padding-top:30px;
+    padding-bottom:30px;
+
+
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    /*background-color: #00c9d3;*/
+}
+.component span{
+    display: inline-block;
+    width: 250px;
+    height:35px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 250px;
+    height: 35px;
+    border-radius: 10px;
+    border:1px solid #c0c0c0;
+    box-shadow: 0 0 5px #c0c0c0;
+    outline: none;
+    padding-left: 8px;
+
+    /*border:non;*/
+}
+.component form span+span{
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+.component form button{
+    width: 70%;
+    /*box-shadow: none;*/
+    height: 35px;
+    margin-left:10%;
+    border: 1px solid #7adcff;
+    border-radius: 10px;
+    background-color: #7adcff;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 8px;
+    text-align: center;
+    cursor: pointer;
+    /*box-shadow: 0 0 0;*/
+
+}
+
+.component form button:hover{
+    border: 1px solid #00c9d3;
+
+    background-color: #00c9d3;
+}
+
